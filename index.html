@@ -65,15 +65,30 @@
   </div>
 </section>
 
-<section class="section gray" id="contact">
-  <div class="container" style="text-align: center">
+<section id="contact" class="contact-section">
     <h2>聯絡方式</h2>
-    <p>
-      私訊我，或留言我會主動聯絡<br>
-      可提供實際範例頁面參考
-    </p>
-    <a href="#" class="btn-secondary">傳送私訊</a>
-  </div>
+    <p>私訊我，或填寫下方表單，我會主動聯絡</p>
+
+    <form name="contact" method="POST" netlify class="contact-form">
+        
+        <input type="hidden" name="form-name" value="contact">
+            <div class="form-group">
+                <label for="name">您的稱呼</label>
+                <input type="text" id="name" name="name" placeholder="例如：X先生/小姐" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="message">詢問內容</label>
+                <textarea id="message" name="message" rows="5" placeholder="請描述您的需求..." required></textarea>
+            </div>
+
+        <button type="submit" class="submit-btn">送出詢問</button>
+    </form>
 </section>
 
 <footer class="footer">
