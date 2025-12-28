@@ -58,6 +58,8 @@ h2 {
 .list {
   max-width: 600px;
   margin: auto;
+  list-style: none;
+  text-align: center;
 }
 
 .list li {
@@ -104,28 +106,27 @@ h2 {
   margin-top: 20px;
 }
 
-.btn-primary:hover {
-    transform: translateY(5px);
-    background: #ffffffc5;
-    color: #111;
-    font-weight: bold;
-}
-
-.btn-secondary:hover {
-    transform: translateY(5px);
-    background: #3f3f3f;
-    color: #fff;
-}
-
 .btn-primary {
   background: #fff;
   color: #111;
   font-weight: bold;
 }
 
+.btn-primary:hover {
+  background: #f0f0f0d4;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 .btn-secondary {
   background: #111;
   color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #434343;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .footer {
